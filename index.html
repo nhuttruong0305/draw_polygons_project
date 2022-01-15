@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Polygons Project</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" defer src="index.js"></script>
+    <style>
+        #drawpolygon{
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <span>Points: </span>
+    <span id="coordinates"></span>
+    <br>
+    <button id="drawpolygon" onclick="drawPolygons()">Vẽ đa giác:</button>
+    <br>
+    <span>Check: </span>
+    <input type="checkbox" id="checkpoint" name="checkpoint">
+    <br>
+    <canvas id="myCanvas" width="400" height="400" style="border: 1px solid #000; margin-top: 5px;"></canvas>
+</body>
+</html>

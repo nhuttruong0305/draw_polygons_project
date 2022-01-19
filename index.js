@@ -48,7 +48,7 @@ function drawPolygons(){
         ctx.moveTo(arrayOfPoint[i].x,arrayOfPoint[i].y);
         ctx.lineTo(arrayOfPoint[i+1].x,arrayOfPoint[i+1].y);
         ctx.strokeStyle="red";
-        ctx.lineWidth=5;
+        ctx.lineWidth=2;
         ctx.stroke();
     }
     let endPoint=arrayOfPoint[arrayOfPoint.length-1];
@@ -56,7 +56,7 @@ function drawPolygons(){
     ctx.moveTo(endPoint.x,endPoint.y);
     ctx.lineTo(startPoint.x,startPoint.y);
     ctx.strokeStyle="red";
-    ctx.lineWidth=5;
+    ctx.lineWidth=2;
     ctx.stroke();
 }
 
